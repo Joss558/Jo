@@ -97,7 +97,6 @@ async def helpcommand(interaction):
 
 
     # ใส่ข้อมูล
-    .
 
     emmbed.set_author(name='JOOOOOOO', url='https://discord.gg/eFVs3KWG', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
@@ -109,6 +108,8 @@ async def helpcommand(interaction):
     emmbed.set_footer(text='Footer', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
     await interaction.response.send_message(embed = emmbed)
+
+
 
 
 server_on()
