@@ -32,6 +32,16 @@ async def on_member_join(member):
                            description = text,
                            color = 0x66FFFF)
 
+    emmbed.set_author(name='{server_name}', url='https://discord.gg/eFVs3KWG', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+
+    # ใส่รูปเล็ก-ใหญ่
+    emmbed.set_thumbnail(url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+    emmbed.set_image(url='https://tenor.com/view/ejen-ali-sleepy-sleepy-head-sleepy-eyes-sleep-gif-4810267325903215782')
+
+    # Footer เนื้อหาส่วนท้าย
+    emmbed.set_footer(text='Footer', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+
+    await interaction.response.send_message(embed = emmbed)
     await channel.send(text) # ส่งข้อความไปที่ห้องนี้
     await channel.send(embed = emmbed)  # ส่ง Embed ไปที่ห้องนี้
     await member.send(text) # ส่งข้อความไปที่แชทส่วนตัวของ member
@@ -40,9 +50,23 @@ async def on_member_join(member):
 @bot.event
 async def on_member_remove(member):
     channel = bot.get_channel(1329135237464064131)  # IDห้อง
-    text = f"{member.name} has left the server!"
+    text = f"{member.mention} has left the server!"
     await channel.send(text)  # ส่งข้อความไปที่ห้องนี้
+    
+    emmbed = discord.Embed(title = 'has left the server!',
+                           description = text,
+                           color = 0x66FFFF)
+    
+    emmbed.set_author(name='{server_name}', url='https://discord.gg/eFVs3KWG', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
+    # ใส่รูปเล็ก-ใหญ่
+    emmbed.set_thumbnail(url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+    emmbed.set_image(url='https://tenor.com/view/ejen-ali-sleepy-sleepy-head-sleepy-eyes-sleep-gif-4810267325903215782')
+
+    # Footer เนื้อหาส่วนท้าย
+    emmbed.set_footer(text='Footer', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+
+    await interaction.response.send_message(embed = emmbed)
 
 
 # คำสั่ง chatbot
