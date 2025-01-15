@@ -97,7 +97,10 @@ async def helpcommand(interaction):
 
 
     # ใส่ข้อมูล
-
+    emmbed.add_field(name='/hello1', value='Hello Commmand', inline=True)
+    emmbed.add_field(name='/hello2', value='Hello Commmand', inline=True)
+    emmbed.add_field(name='/hello3', value='Hello Commmand', inline=False)
+    
     emmbed.set_author(name='JOOOOOOO', url='https://discord.gg/eFVs3KWG', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
     # ใส่รูปเล็ก-ใหญ่
