@@ -66,7 +66,7 @@ async def namecommand(interaction, name : str):
 @bot.tree.command(name='dddd', description='Bot Commands')
 async def helpcommand(interaction):
     emmbed = discord.Embed(title='...',
-                           description='ผู้สร้างทั้งหมด',
+                           description='ผู้สร้างทั้งหมดjo',
                            color=0x66FFFF,
                            timestamp= discord.utils.utcnow())
 
