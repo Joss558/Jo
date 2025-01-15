@@ -83,32 +83,32 @@ async def hellocommand(interaction):
 @bot.tree.command(name='name')
 @app_commands.describe(name = "What's your name?")
 async def namecommand(interaction, name : str):
-    await interaction.response.send_message(f"Hello {name}")
+    await interaction.response.send_message(f"สวัสดีคุณ{name}เป็นเกย์หรือเปล่า")
 
 
 # Embeds
 
-@bot.tree.command(name='help', description='Bot Commands')
+@bot.tree.command(name='dddd', description='Bot Commands')
 async def helpcommand(interaction):
-    emmbed = discord.Embed(title='Help Me! - Bot Commands',
+    emmbed = discord.Embed(title='...',
                            description='Bot Commands',
                            color=0x66FFFF,
                            timestamp= discord.utils.utcnow())
 
 
     # ใส่ข้อมูล
-    emmbed.add_field(name='/hello1', value='Hello Commmand', inline=True)
-    emmbed.add_field(name='/hello2', value='Hello Commmand', inline=True)
-    emmbed.add_field(name='/hello3', value='Hello Commmand', inline=False)
+    .
+    .
+    .
 
-    emmbed.set_author(name='Author', url='https://www.youtube.com/@maoloop01/channels', icon_url='https://yt3.googleusercontent.com/0qFq3tGT6LVyfLtZc-WCXcV9YyEFQ0M9U5W8qDe36j2xBTN34CJ20dZYQHmBz6aXASmttHI=s900-c-k-c0x00ffffff-no-rj')
+    emmbed.set_author(name='JOOOOOOO', url='https://discord.gg/eFVs3KWG', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
     # ใส่รูปเล็ก-ใหญ่
-    emmbed.set_thumbnail(url='https://yt3.googleusercontent.com/0qFq3tGT6LVyfLtZc-WCXcV9YyEFQ0M9U5W8qDe36j2xBTN34CJ20dZYQHmBz6aXASmttHI=s900-c-k-c0x00ffffff-no-rj')
-    emmbed.set_image(url='https://i.ytimg.com/vi/KZRa9DQzUpQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfWDgiBYjFJtrUasd5yxmQZJG_cg')
+    emmbed.set_thumbnail(url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
+    emmbed.set_image(url='https://tenor.com/view/ejen-ali-sleepy-sleepy-head-sleepy-eyes-sleep-gif-4810267325903215782')
 
     # Footer เนื้อหาส่วนท้าย
-    emmbed.set_footer(text='Footer', icon_url='https://yt3.googleusercontent.com/0qFq3tGT6LVyfLtZc-WCXcV9YyEFQ0M9U5W8qDe36j2xBTN34CJ20dZYQHmBz6aXASmttHI=s900-c-k-c0x00ffffff-no-rj')
+    emmbed.set_footer(text='Footer', icon_url='https://media.discordapp.net/attachments/1078962950691373117/1174118238733480026/image0.gif?ex=6788e392&is=67879212&hm=6b81c55686ff66496370dd78235657ac6ecf59428ade3a954378131572b7e3d3&')
 
     await interaction.response.send_message(embed = emmbed)
 
